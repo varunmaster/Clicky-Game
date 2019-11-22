@@ -3,3 +3,9 @@
     margin: auto;
     margin-top: 80px;
 }
+
+.jumbotron {
+    background-color: #5CDb95;
+    border-color: black;
+    color: #EDF5E1;
+}

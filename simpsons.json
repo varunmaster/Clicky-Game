@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "name": "Homer",
+        "image": "http://www.simpsoncrazy.com/content/pictures/homer/HomerSimpson25.gif"
+    },
+    {
+        "id": 2,
+        "name": "Marge",
+        "image": "http://www.simpsoncrazy.com/content/pictures/marge/MargeSimpson3.gif"
+    },
+    {
+        "id": 3,
+        "name": "Lisa",
+        "image": "http://www.simpsoncrazy.com/content/pictures/lisa/LisaSimpson5.gif"
+    },
+    {
+        "id": 4,
+        "name": "Bart",
+        "image": "http://www.simpsoncrazy.com/content/pictures/bart/BartSimpson2.gif"
+    },
+    {
+        "id": 5,
+        "name": "Maggie",
+        "image": "http://www.simpsoncrazy.com/content/pictures/maggie/MaggieSimpson8.gif"
+    },
+    {
+        "id": 6,
+        "name": "Grandpa (Abe)",
+        "image": "http://www.simpsoncrazy.com/content/pictures/regulars/GrampaComa.gif"
+    },
+    {
+        "id": 7,
+        "name": "Apu",
+        "image": "http://www.simpsoncrazy.com/content/pictures/regulars/Apu1.gif"
+    },
+    {
+        "id": 8,
+        "name": "Milhouse",
+        "image": "http://www.simpsoncrazy.com/content/pictures/regulars/Milhouse1.gif"
+    },
+    {
+        "id": 9,
+        "name": "Moe",
+        "image": "http://www.simpsoncrazy.com/content/pictures/regulars/MoeSzyslak6.gif"
+    },
+    {
+        "id": 10,
+        "name": "Ralph",
+        "image": "http://www.simpsoncrazy.com/content/pictures/regulars/RalphWiggum2.gif"
+    },
+    {
+        "id": 11,
+        "name": "Santas Little Helper",
+        "image": "http://www.simpsoncrazy.com/content/pictures/regulars/SantasLittleHelper1.gif"
+    },
+    {
+        "id": 12,
+        "name": "Snowball",
+        "image": "http://www.simpsoncrazy.com/content/pictures/regulars/SnowballSLH.gif"
+    }
+]
+
+
+

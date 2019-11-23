@@ -30,11 +30,49 @@ class App extends Component {
 
     componentDidMount() {
         this.setState({ simpsons: this.randomize(simpsons) });
+    };
+
+    handleImgClick = id => {
+        if (this.state.clicked.includes(id)) {
+            alert("You Lost!");
+            this.resetGame();
+        } else {
+            this.setState(prevState => ({
+                clicked: [...prevState.clicked, id],
+                currentScore: this.state.currentScore + 1,
+                simpsons: this.randomize(simpsons)
+            }), () => {
+                this.checkAndUpdateScore();
+                this.handleWin();
+            });
+        }
+    };
+
+    resetGame() {
+        this.setState({
+            simpsons: this.randomize(simpsons),
+            clicked: [],
+            currentScore: 0
+        });
+    };
+
+    checkAndUpdateScore() {
+        if(this.state.clicked.length > this.state.highScore) {
+            this.setState({ highScore: this.state.clicked.length });
+        }
     }
 
+    handleWin() {
+        if (this.state.currentScore === this.state.simpsons.length){
+            alert("You Won!!!");
+            this.resetGame();
+        }
+    };
+
     render() {
+        const { currentScore, highScore } = this.state;
         return (
-            <Nav currentScore={this.state.currentScore} highScore={this.state.highScore}>
+            < Nav currentScore={currentScore} highScore={highScore} >
                 <div>
                     <div className="jumbotron jumbotron-fluid text-center">
                         <div className="container">
@@ -50,11 +88,12 @@ class App extends Component {
                                 key={simpson.id}
                                 name={simpson.name}
                                 image={simpson.image}
+                                handleImgClick={this.handleImgClick}
                             />
                         ))}
                     </div>
                 </div>
-            </Nav>
+            </Nav >
         );
     }
 }
